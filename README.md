@@ -10,9 +10,9 @@ Install
 
   `mkdir ~/.vim && cd ~/.vim`
 
-2. Clone the repository
+2. Clone the repository to the current directory
 
-  `git clone https://github.com/bruce30262/vim`
+  `git clone https://github.com/bruce30262/vim .`
 
 3. Update submodules
 
