@@ -3,6 +3,7 @@ set shiftwidth=4
 set tabstop=4
 set cursorline
 set hls
+set expandtab
 syntax on
 
 execute pathogen#infect()
