@@ -27,3 +27,4 @@ Current Plugins
 ===============
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [vim-snipmate](https://github.com/garbas/vim-snipmate.git)
+* [python-pep8-indent](https://github.com/hynek/vim-python-pep8-indent.git)
