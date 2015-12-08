@@ -16,7 +16,8 @@ Install
 
 3. Update submodules
 
-  `git submodule update --init`
+  `git submodule update --init`  
+  `git submodule update --remote --merge`
   
 4. Copy the `.vimrc` to the home directory
 
