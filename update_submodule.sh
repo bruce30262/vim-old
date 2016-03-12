@@ -2,5 +2,5 @@
 
 git submodule update --remote --merge
 git add .
-git commit -m "update vim-snippets"
+git commit -m "update submodule"
 git push
