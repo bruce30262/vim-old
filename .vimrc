@@ -9,4 +9,4 @@ syntax on
 execute pathogen#infect()
 filetype plugin indent on
 nnoremap <silent> <F5> :NERDTree<CR>
-command PPP execute ":0r ~/CTF-master/script/exp_templete.py"
+command PPP execute ":0r ~/CTF-master/script/exp_template.py"
