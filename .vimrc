@@ -45,4 +45,4 @@ filetype plugin indent on
 nnoremap <silent> <F5> :NERDTree<CR>
 
 " pwning script for CTF
-command PPP execute ":0r ~/CTF-master/script/exp_template.py | :20,87fold | :91,94fold | :89ma a"
+command PPP execute ":0r ~/CTF-master/script/exp_template.py"
