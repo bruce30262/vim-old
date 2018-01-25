@@ -40,6 +40,14 @@ imap <F2> <esc>:set spell!<CR><Bar>:echo "Spell check: " . strpart("OffOn", 3 * 
 hi clear SpellBad
 hi SpellBad term=underline cterm=underline ctermfg=red
 
+" utf-8 encoding ( http://vim.wikia.com/wiki/Working_with_Unicode )
+if has("multi_byte")
+  set encoding=utf-8
+  set termencoding=utf-8
+  setglobal fileencoding=utf-8
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
+
 execute pathogen#infect()
 filetype plugin indent on
 nnoremap <silent> <F5> :NERDTree<CR>
