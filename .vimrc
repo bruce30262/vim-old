@@ -54,3 +54,5 @@ nnoremap <silent> <F5> :NERDTree<CR>
 
 " pwning script for CTF
 command PPP execute ":0r ~/CTF-master/script/exp_template.py"
+" force write with sudo tee trick
+command W execute ":w !sudo tee %"
