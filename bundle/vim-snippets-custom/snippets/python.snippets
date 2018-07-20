@@ -1,0 +1,47 @@
+# top priority
+priority 1
+
+# print
+snippet print
+	print("${1}")
+
+# for CTF pwning 
+snippet sd
+	r.send(${1})
+snippet sl
+	r.sendline(${1})
+snippet sda
+	r.sendafter(${1:delim}, ${2:data})
+snippet sdt
+	r.sendthen(${1:delim}, ${2:data})
+snippet sla
+	r.sendlineafter(${1:delim}, ${2:data})
+snippet slt
+	r.sendlinethen(${1:delim}, ${2:data})
+snippet rv
+	r.recv(${1:1024})
+snippet rl
+	r.recvline()
+snippet rt
+	r.recvuntil(${1})
+#log.success address
+snippet lsa
+	log.success("${1:libc}: {:#x}".format(${2:$1}${3}))
+#log.info
+snippet lii
+	log.info("${1}")
+snippet pay
+	payload = ${1}
+	payload += ${2}
+	payload += ${3}
+	payload += ${4}
+snippet inter
+	r.interactive()
+snippet fmt
+	payload, prints = fmtstr(${1:payload}, ${2:prints}, ${3:index}, ${4:data}, ${5})
+snippet got
+	elf.got.${1:__libc_start_main}
+snippet plt
+	elf.plt.${1}
+snippet sym
+	${1:libc}.symbols.${2:__libc_start_main}

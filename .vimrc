@@ -51,6 +51,8 @@ endif
 execute pathogen#infect()
 filetype plugin indent on
 nnoremap <silent> <F5> :NERDTree<CR>
+" override with custom snippets
+let g:snipMate = { 'override' : 1 }
 
 " pwning script for CTF
 command PPP execute ":0r ~/CTF-master/script/exp_template.py"
