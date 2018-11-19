@@ -6,7 +6,6 @@ set cursorline
 set hls
 set expandtab
 set noswapfile
-set nowrap " don't split line
 set sidescroll=1
 syntax on
 
