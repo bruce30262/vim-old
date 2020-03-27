@@ -13,6 +13,10 @@
 [submodule "bundle/vim-python-pep8-indent"]
 	path = bundle/vim-python-pep8-indent
 	url = https://github.com/hynek/vim-python-pep8-indent.git
-[submodule "bundle/vim-snippets"]                                                                                                                                      
+[submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/nord-vim"]
+	path = bundle/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim.git
+	branch = master

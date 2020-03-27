@@ -53,6 +53,9 @@ nnoremap <silent> <F5> :NERDTree<CR>
 " override with custom snippets
 let g:snipMate = { 'override' : 1 }
 
+" https://github.com/arcticicestudio/nord-vim/
+colorscheme nord
+
 " pwning script for CTF
 command PPP execute ":0r ~/CTF-master/script/exp_template.py"
 " force write with sudo tee trick
