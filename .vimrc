@@ -7,7 +7,6 @@ set hls
 set expandtab
 set noswapfile
 set sidescroll=1
-syntax on
 
 " key mapping
 nmap <F7> gT
@@ -40,6 +39,7 @@ endif
 execute pathogen#infect()
 " Detect file type, load their plugins and indent settings
 filetype plugin indent on
+syntax on
 " map F5 to NERDtree
 nnoremap <silent> <F5> :NERDTree<CR>
 " override with custom snippets
