@@ -9,23 +9,12 @@ set noswapfile
 set sidescroll=1
 syntax on
 
-" color
-color desert
-
 " key mapping
 nmap <F7> gT
 nmap <F8> gt
 set pastetoggle=<F9>
 nmap <F10> <esc>:set list!<CR>
 imap <F10> <esc>:set list!<CR>
-
-" status line
-set ls=2                                                " laststatus=2
-set statusline=%<%F                                     " file name
-set statusline+=\ [%{&fileencoding},%{&fileformat}]     " encoding + fileformat
-set statusline+=%=                                      " move to right
-set statusline+=%6*\ \ line:%l/%L\ col:%03c\ (%03p%%)\  " line number column /total (%)
-set statusline+=%0*\ \ %m%r%w\ %P\ \                    " Modified? Readonly? Top/bot.
 
 " wild mode (auto complete the vim cmd)
 set wildmenu
@@ -55,6 +44,12 @@ let g:snipMate = { 'override' : 1 }
 
 " https://github.com/arcticicestudio/nord-vim/
 colorscheme nord
+" powerline
+set laststatus=2
+set t_Co=256
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
 
 " pwning script for CTF
 command PPP execute ":0r ~/CTF-master/script/exp_template.py"
