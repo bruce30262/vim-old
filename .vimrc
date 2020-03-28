@@ -36,14 +36,18 @@ if has("multi_byte")
   set fileencodings=ucs-bom,utf-8,latin1
 endif
 
+" Load vim plugins ( manager: pathogen )
 execute pathogen#infect()
+" Detect file type, load their plugins and indent settings
 filetype plugin indent on
+" map F5 to NERDtree
 nnoremap <silent> <F5> :NERDTree<CR>
 " override with custom snippets
 let g:snipMate = { 'override' : 1 }
 
-" https://github.com/arcticicestudio/nord-vim/
+" Nord theme : https://github.com/arcticicestudio/nord-vim/
 colorscheme nord
+
 " powerline
 set laststatus=2
 set t_Co=256
@@ -53,5 +57,6 @@ python3 del powerline_setup
 
 " pwning script for CTF
 command PPP execute ":0r ~/CTF-master/script/exp_template.py"
+
 " force write with sudo tee trick
 command W execute ":w !sudo tee %"
