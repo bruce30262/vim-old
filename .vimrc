@@ -62,3 +62,6 @@ command PPP execute ":0r ~/CTF-master/script/exp_template.py"
 command ForceWrite execute ":w !sudo tee %"
 " Use :ww instead of ForceWrite
 cnoreabbrev ww ForceWrite
+" :W == :w cause computer is too dumb to know I'm typing :w instead of :W
+command W execute ":w"
+command Wq execute ":wq"
