@@ -45,3 +45,23 @@ snippet plt
 	elf.plt.${1}
 snippet sym
 	${1:libc}.symbols.${2:__libc_start_main}
+
+# argparse skeleton
+snippet argpy
+	#!/usr/bin/env python3
+
+	import argparse
+	import sys
+
+	USAGE = f"""
+	{sys.argv[0]} <example>
+	"""
+
+	if __name__ == '__main__':
+		parser = argparse.ArgumentParser(description='${0}', usage=USAGE, formatter_class=argparse.RawTextHelpFormatter)
+		parser.add_argument('url', help='positional arg')
+		parser.add_argument('-H', '--host', type=str, help='string arg', required=True)
+		parser.add_argument('-p', '--port', type=int, default=22, choices=[22, 222, 2222],  help='int arg')
+		parser.add_argument('-f', '--force', help='arg for true or false', action='store_true')
+		parser.add_argument('-e', '--exec', help='arg will store in dest', dest='dst')
+		args = parser.parse_args()
