@@ -65,3 +65,6 @@ cnoreabbrev ww ForceWrite
 " :W == :w cause computer is too dumb to know I'm typing :w instead of :W
 command W execute ":w"
 command Wq execute ":wq"
+command Q execute ":q"
+" Eliminate SnipMate-deprecate warning message
+let g:snipMate = { 'snippet_version' : 1 }
