@@ -19,7 +19,6 @@
 [submodule "bundle/nord-vim"]
 	path = bundle/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim.git
-	branch = master
 [submodule "bundle/vim-tmux-focus-events"]
 	path = bundle/vim-tmux-focus-events
 	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
