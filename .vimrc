@@ -9,6 +9,7 @@ set noswapfile
 set sidescroll=1
 
 " key mapping
+nmap <F6> :set number! number?<cr>
 nmap <F7> gT
 nmap <F8> gt
 set pastetoggle=<F9>
@@ -20,7 +21,7 @@ set wildmenu
 set wildmode=list:longest,full
 
 " spell check
-" toggle spell checl
+" toggle spell check
 map <F2> :set spell!<CR><Bar>:echo "Spell check: " . strpart("OffOn", 3 * &spell, 3)<CR>
 imap <F2> <esc>:set spell!<CR><Bar>:echo "Spell check: " . strpart("OffOn", 3 * &spell, 3)<CR>
 " spell check color setting
