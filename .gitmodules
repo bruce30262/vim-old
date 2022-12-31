@@ -17,6 +17,7 @@
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
 [submodule "bundle/nord-vim"]
+	branch = main
 	path = bundle/nord-vim
 	url = https://github.com/arcticicestudio/nord-vim.git
 [submodule "bundle/vim-tmux-focus-events"]
