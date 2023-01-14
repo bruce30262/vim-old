@@ -1,31 +1,28 @@
 vim
 ===
 
-my own vim configuration
+My own vim configurations
 
 Install
 =======
 
 1. Create `.vim` directory in the home directory
 
-  `mkdir ~/.vim && cd ~/.vim`
+  `mkdir ~/.vim`
 
-2. Clone the repository to the current directory
+2. Clone the repository and submodules into the `.vim` directory
 
-  `git clone https://github.com/bruce30262/vim .`
+  `git clone --recurse-submodules https://github.com/bruce30262/vim ~/.vim`
 
 3. Update submodules
 
-  `git submodule update --init`  
   `git submodule update --remote --merge`
   
-4. Copy the `.vimrc` to the home directory
+4. Link the `.vimrc` to the home directory
 
-  `cp .vimrc ~/.vimrc`
+  `ln -sf ~/.vim/.vimrc ~/.vimrc`
   
 
 Current Plugins
 ===============
-* [nerdtree](https://github.com/scrooloose/nerdtree)
-* [vim-snipmate](https://github.com/garbas/vim-snipmate.git)
-* [python-pep8-indent](https://github.com/hynek/vim-python-pep8-indent.git)
+* Check the [bundle](https://github.com/bruce30262/vim/tree/master/bundle) directory
