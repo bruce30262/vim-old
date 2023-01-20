@@ -1,7 +1,7 @@
 vim
 ===
 
-My own vim configurations
+My own vim configurations (deprecated)
 
 Install
 =======
